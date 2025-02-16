@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 90%);
+    background-color: #1E3A8A;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+    background-color: hsl(0, 0%, 92%);
     width: clamp(20rem, 50vw, 50rem);
     height: clamp(20rem, 50vh, 30rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -21,7 +22,7 @@ body {
 }
 
 .container .header {
-    background-color: hsl(0, 0%, 100%);
+    background-color: #007BFF;
     padding: 1rem;
     border-bottom: 1px solid hsl(0, 0%, 90%);
     border-radius: 10px 10px 0 0;
@@ -30,7 +31,7 @@ body {
 .container .header h1 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 700;
-    color: hsl(0, 0%, 10%);
+    color: #fff;
 }
 
 .container .content {
@@ -64,8 +65,8 @@ body {
     padding: 0.5rem;
     margin: 0.5rem 0;
     border: none;
-    background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 100%);
+    background-color: #32CD32;
+    color: #FFFFFF;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
     transition: .4s ease background-color;
@@ -80,13 +81,13 @@ body {
     outline: none;
 }
 
-.container .content form button:active {
-    background-color: hsl(0, 0%, 30%);
+.container .content form button:active,
+.container .content form button:hover,
+.container .content ul li button:active,
+.container .content ul li button:hover {
+    background-color: #2A9A2A;
 }
 
-.container .content form button:hover {
-    background-color: hsl(0, 0%, 30%);
-}
 
 .container .content ul {
     list-style: none;
@@ -108,20 +109,6 @@ body {
     position: relative;
 }
 
-.container .content ul li input {
-    appearance: none;
-    -moz-appearance: none;
-    border-radius: 50%;
-    background-color: hsl(0, 0%, 60%);
-    width: 1.4rem;
-    height: 1.4rem;
-    cursor: pointer;
-}
-
-.container .content ul li input[type="checkbox"]:checked {
-    background-color: hsl(110, 85%, 43%);
-}
-
 .container .content ul li label {
     font-size: 1.2rem;
     text-align: start;
@@ -130,21 +117,23 @@ body {
     left: 2.8rem;
 }
 
+/* .container .content ul li svg {
+    cursor: pointer;
+    fill: green;
+} */
+
+.test {
+    fill: green;
+}
+
 .container .content ul li button {
     border: none;
-    background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 100%);
+    background-color: #32CD32;
+    color: #FFFFFF;
     padding: 0.5rem 1.6rem;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.container .content ul li button:hover {
-    background-color: hsl(0, 0%, 20%);
-}
-
-.container .content ul li button:active {
-    background-color: hsl(0, 0%, 30%);
+    transition: .4s ease background-color;
 }
 
 .container .content ul li button:focus {
