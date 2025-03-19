@@ -110,27 +110,18 @@ body {
 }
 
 .container .content ul li label {
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
     text-align: start;
     width: auto;
     position: absolute;
     left: 2.8rem;
 }
 
-/* .container .content ul li svg {
-    cursor: pointer;
-    fill: green;
-} */
-
-.test {
-    fill: green;
-}
-
 .container .content ul li button {
     border: none;
     background-color: #32CD32;
     color: #FFFFFF;
-    padding: 0.5rem 1.6rem;
+    padding: 0.2rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: .4s ease background-color;
@@ -138,4 +129,10 @@ body {
 
 .container .content ul li button:focus {
     outline: none;
+} 
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 80vh !important;
+    }
 }
